@@ -1,21 +1,16 @@
-package technology.touchmars.feign.wechat.client.config;
+package technology.touchmars.feign.wechat.client.config
 
-import org.springframework.beans.factory.ObjectFactory;
-import org.springframework.boot.autoconfigure.http.HttpMessageConverters;
-import org.springframework.cloud.openfeign.support.SpringDecoder;
+import org.springframework.beans.factory.ObjectFactory
+import org.springframework.boot.autoconfigure.http.HttpMessageConverters
+import org.springframework.cloud.openfeign.support.SpringDecoder
+
 //import org.springframework.cloud.netflix.feign.support.SpringDecoder;
 
-public class WechatSpringDecoder extends SpringDecoder {
-
-	public WechatSpringDecoder(ObjectFactory<HttpMessageConverters> messageConverters) {
-		super(messageConverters);		
-	}
-	
-//	@Override
+class WechatSpringDecoder(messageConverters: ObjectFactory<HttpMessageConverters>) : SpringDecoder(messageConverters)//	@Override
 //	public Object decode(final Response response, Type type) throws IOException, FeignException {
 //		final SimpleResponse o;
 //		try{
-//			o = (SimpleResponse)super.decode(response, SimpleResponse.class);			
+//			o = (SimpleResponse)super.decode(response, SimpleResponse.class);
 //		}catch(Exception e){
 //			//TODO: this part may be stupid => need rethink!!!
 //			e.printStackTrace();
@@ -23,7 +18,7 @@ public class WechatSpringDecoder extends SpringDecoder {
 //				throw e;
 //			}else{
 //				return super.decode(response, type);
-//			}			
+//			}
 //		}
 //		if(o!=null && SimpleResponse.notZero(o.getErrcode())){
 //			if(type.equals(SimpleResponse.class)){
@@ -39,5 +34,3 @@ public class WechatSpringDecoder extends SpringDecoder {
 //			}
 //		}
 //	}
-
-}
