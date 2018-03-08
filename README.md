@@ -1,1 +1,2 @@
-`mvn clean install deploy -DperformRelease=true`
+- this should replace the project [spring-security-oauth2-client-wechat](https://github.com/jhcao23/spring-security-oauth2-client-wechat)
+- `mvn clean install deploy -DperformRelease=true`

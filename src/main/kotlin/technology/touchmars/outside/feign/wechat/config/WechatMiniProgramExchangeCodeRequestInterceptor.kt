@@ -17,7 +17,6 @@ class WechatMiniProgramExchangeCodeRequestInterceptor(private val clientId: Stri
                 .query(PARAM_NAME_APP_ID, clientId)
                 .query(PARAM_NAME_SECRET, secret)
                 .query(PARAM_NAME_GRANT_TYPE, PARAM_VALUE_GRANT_TYPE)
-
     }
 
     companion object {
