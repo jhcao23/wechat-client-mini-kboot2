@@ -12,18 +12,18 @@ import com.fasterxml.jackson.annotation.JsonProperty
  *
  * @author jhcao
  */
-open class SessionKeyToken {
+class SessionKeyToken {
 
     @JsonProperty("openid")
-    private val openId: String? = null
+    val openId: String? = null
 
     @JsonProperty("session_key")
-    private val sessionKey: String? = null
+    val sessionKey: String? = null
 
     @JsonProperty("unionid")
-    private val unionId: String? = null
+    val unionId: String? = null
 
     @JsonProperty("expires_in")
-    private val expiresIn: Integer? = null
+    val expiresIn: Integer? = null
 
 }
